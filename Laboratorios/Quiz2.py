@@ -3,7 +3,6 @@
 
 monto=float(input("ingrese el valor del monto: "))
 
-
 if monto>= 500:
    descuento = monto * 0.30
    monto= monto - descuento
