@@ -1,16 +1,14 @@
-#CLASE 5 Quiz3 Completado
+#CLASE 5 quiz 3
 #Autor: Ivan Hidalgo
 
-segundos=int(input("ingrese  el valor en segundos: "))
-minuto = 60
-
-
-if segundos>=60:
-   segundos_s= segundos - minuto
-
-if segundos_s<60:
-   segundos_f = minuto - segundos_s
-
-
-print ("los segundos faltantes para un minutos es " + str (segundos_f) + " segundos")
-
+for i in range (6): 
+   segundos=int(input("Ingrese el valor en segundos: "))
+   aux_segundos=segundos
+   minuto=0
+   for j in range (60):
+      if aux_segundos>=60:
+         aux_segundos= aux_segundos - 60 
+         minuto=minuto+1
+   
+   print ("Los segundos faltantes para un minutos mas son " + str (60 - aux_segundos) + " segundos")
+     
