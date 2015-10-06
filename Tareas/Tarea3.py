@@ -8,8 +8,8 @@
 
 
 numero=int(input("ingrese un numero: "))
- 
-resultado={}
+resultado=[]
+
 for i in range(1,numero+1):
    resultado[i]=(i*(i+1)/2)
 
