@@ -1,4 +1,4 @@
-#CLASE 5 quiz 3
+#CLASE 5 Quiz3
 #Autor: Ivan Hidalgo
 
 segundos=int(input("ingrese  el valor en segundos: "))
