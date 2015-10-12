@@ -6,11 +6,11 @@
 
 tiempo=int(input("Ingrese el tiempo en minutos: "))
 
-if tiempo/1440>=0:   # 24 horas x 60 minutos= 1440 minutos
+if tiempo/1440>0:   # 24 horas x 60 minutos= 1440 minutos
    dias = tiempo / 1440
-   x = tiempo % 1440
-   horas = x / 60
-   minutos = x % 60
+   aux = tiempo % 1440
+   horas = aux / 60
+   minutos = aux % 60
 
 if tiempo==1440:
    tiempo=tiempo
