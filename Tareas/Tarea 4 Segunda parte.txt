@@ -1,3 +1,4 @@
+¿Qué es main y cómo funciona?
  if __name__ == '__main__': tiene dos casos de uso principal:
 
 Dejar un módulo para proporcionar funcionalidad para importar a otro código mientras que también proporciona la semántica útiles como una secuencia de comandos independiente (un envoltorio de línea de comandos en torno a la funcionalidad)
