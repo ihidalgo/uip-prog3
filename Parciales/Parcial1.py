@@ -17,20 +17,19 @@ total_impuestos=[]
 neto=[]
 
 
-for i in range (2):
-
+for i in range (3):
+   
    v_nombre= str(input("Ingrese el nombre del empleado " + str (i+1) +" :")) #se llena la lista nombre
    nombre.append(v_nombre)
    v_edad= int(input("Ingrese la edad :"))                                   #se llena la lista edad
    edad.append(v_edad)
-   
    v_horas=int(input("Ingrese el valor de las horas: "))                     #se llena la lista valor_horas
    valor_horas.append(v_horas)
    
    v_horast=int(input("Ingrese la cantidad de horas trabajadas: "))          #se llena la lista horas_trabajadas
    horas_trabajadas.append(v_horast)
 
-   if horas_trabajadas[i]>104:  #13 dias de trabajo = 104 horas
+"""   if horas_trabajadas[i]>104:  #13 dias de trabajo = 104 horas
       
       pago_bruto[i] = horas_trabajadas [i] * valor_horas [i]  #calcula pago bruto
       horas_extras[i]  =  horas_trabajadas [i] - 104          #calcula horas extras          
@@ -45,8 +44,11 @@ for i in range (2):
       pago_bruto[i] =  horas_trabajadas [i] * valor_horas [i]
       impuestos[i]  =  pago_bruto[i] * 0.10
       total_impuestos[i]  =  impuestos[i] 
-      neto[i] = pago_bruto[i] - total_impuestos[i]
+      neto[i] = pago_bruto[i] - total_impuestos[i] """
     
    
-for i in range (2):  #para imprimir resultados
-   print (nombre[i])   
+#for i in range (3):  #para imprimir resultados
+   #print (nombre[i],edad[i])   
+print (nombre[0],edad[0])  
+print (nombre[1],edad[1])  
+print (nombre[2],edad[2])
