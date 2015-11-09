@@ -1,0 +1,16 @@
+¿Qué es un API?
+una API es una especificación formal sobre cómo un módulo de un software se comunica o interactúa con otro.
+
+En otras palabras, las API son un conjunto de comandos, funciones y protocolos informáticos que permiten a los desarrolladores 
+crear programas específicos para ciertos sistemas operativos. Las API simplifican en gran medida el trabajo de un creador de programas, 
+ya que no tiene que escribir códigos desde cero. Estas permiten al informático usar funciones predefinidas para interactuar
+con el sistema operativo o con otro programa.
+
+¿Cómo implementar un API en Python?
+
+Se pueden utilizar varios framework  por ejemplo el Django.
+Django es un framework web de Python de alto nivel que fomenta el rápido desarrollo y diseño limpio y pragmático. 
+Construido por los desarrolladores con experiencia, que se encarga de gran parte de la molestia de desarrollo Web, 
+para que pueda centrarse en la escritura de su aplicación sin necesidad de reinventar la rueda. Es gratuito y de código abierto.
+
+tutorial en español para implmentación: http://www.genbetadev.com/desarrolloparastartups/como-crear-un-servicio-rest-en-30-lineas-de-codigo-de-django-y-python
