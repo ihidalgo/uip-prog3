@@ -1,81 +1,19 @@
-class Planilla:
+numero = int(input("Dígame cuántas palabras tiene la lista: "))
 
-       string nombre
-       string apellido
-       int edad
-       float bpago,horast
-       float horae ,bruto, pextra ,tpagar ,impuestos ,impuestose ,neto,total_impuestos
-           
-  p[100]
-   
+if numero < 1:
+    print("¡Imposible!")
+else:
+    lista = []
+    for i in range(numero):
+        print("Dígame la palabra", str(i + 1) + ": ", end="")
+        palabra = input()
+        lista += [palabra]
+    print("La lista creada es:", lista)
 
-   
-   float total_54=0,total_55=0, mayor=0, contador=0
-   string nombre1,apellido1
-   
-for(int i=0 i<2 i++)
-  
- cout<<" Introduzca el nombre, apellido y edad del empleado %i",i+1
- cout<<" "<<endl
- cin >>  p[i].nombre
- cin >>  p[i].apellido
- cin >>  p[i].edad
- 
- cout<<" "<<endl
- 
- cout <<" Introduzca el pago por hora y las horas trabajadas"<<endl
- cin >>  p[i].bpago
- cin >>  p[i].horast
- 
- cout<<" "<<endl
- 
-      if (p[i].horast>40)
-      
-      p[i].bruto  =  (p[i].horast * p[i].bpago)    /*hay un ligero error con el calculo 40*5  +10*5*1.50 */
-      p[i].horae  =  (p[i].horast - 40)                  
-      p[i].pextra =  (p[i].horae  * 1.50)
-      p[i].tpagar =  (p[i].bruto +  p[i].pextra)
-      p[i].impuestos  =  (p[i].bruto * 0.10)
-      p[i].impuestose =  (p[i].pextra * 0.20)
-      p[i].total_impuestos = (p[i].impuestos + p[i].impuestose)
-      p[i].neto = (p[i].tpagar - p[i].total_impuestos)+3
-      
- 
-     else 
-     
-     p[i].bruto =  (p[i].horast * p[i].bpago)
-     p[i].impuestos  =  (p[i].bruto * 0.10)
-     p[i].total_impuestos  =   (p[i].impuestos) 
-     p[i].neto = (p[i].bruto - p[i].total_impuestos)
- 
+    eliminar = input("Palabra a eliminar: ")
+    for i in range(len(lista)-1, -1, -1):
+        if lista[i] == eliminar:
+            del(lista[i])
+    print("La lista es ahora:", lista)         
 
-      /*El pago total para los empleados de al menos 55*/
-      if  (p[i].edad >=55)
-         
-      total_55=total_55+p[i].neto
-        
-     
-     /*El pago total promedio para los empleados de menos de 55 años*/
-     if (p[i].edad <55)
-         
-     total_54=total_54+p[i].neto
-     contador=contador+1
-                 
-
-        
-      /*El nombre y pago total para el empleado  con máximo pago total (Se supone que no hay empate)*/ 
-      if (i==0)
-              
-      mayor     = p[i].neto
-      nombre1   = p[i].nombre   
-      apellido1 = p[i].apellido      
-    
-      if (mayor<p[i].neto)
-                   
-      mayor     = p[i].neto
-      nombre1   = p[i].nombre   
-      apellido1 = p[i].apellido   
-         
-
-  
-   
+------------------------------------------------
